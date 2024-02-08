@@ -14,11 +14,11 @@ public class Arena {
     private Robot fight() {
         while (robot1.isDead()==false && robot2.isDead()==false)  {
             // tant que les robot sont en vie ils tirent
-            robot2.fire(robot1);
-            if (robot1.isDead()==false) {
-                robot1.fire(robot2);
+            robot1.fire(robot2);
+            if (robot2.isDead()==false) {
+                robot2.fire(robot1);
             }
         }
-        return robot1.isDead()==true ? robot1 : robot2;
+        return robot1.isDead()==true ? robot2 : robot1;
     }
 }

@@ -15,7 +15,7 @@ public class App
         robot1.tostring();
         System.out.println(robot1.isDead());
         robot1.fire(robot2); 
-        Arena arena1=new Arena(robot2, robot1);
+        Arena arena1=new Arena(robot1, robot2);
         System.out.println("le vainceur est le robot "+" "+arena1.vainceur.getName());
     }
 }
